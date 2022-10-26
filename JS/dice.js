@@ -35,7 +35,7 @@ roll.addEventListener("click", function () {
 	document.querySelector(".rules").classList.add("hidden");
 	if (playing) {
 		const number = Math.ceil(Math.random() * 6);
-		dice.src = `images/dice-${number}.png`;
+		dice.src = `Images/dice-${number}.png`;
 		dice.classList.remove("hidden");
 
 		if (number == 1) {
