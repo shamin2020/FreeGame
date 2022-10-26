@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Shamin Memary| shamin.v@gmail.com" />
+		<meta name="description" content="Free Games" />
+
+		<title>Catch Me</title>
+		<link rel="icon" type="icon" href="Images/game.ico" />
+		<link rel="stylesheet" href="CSS/catch.css" />
+	</head>
+
+	<body onLoad="setPosition()" onkeydown="return handleKeys(event)">
+		<div class="gameFeild">
+			<a href="index.html" class="home">Home</a>
+			<div id="winnerModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<img src="Images/win.png" width="50%" height="50%" /><br />
+				</div>
+			</div>
+			<div id="looserModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<img src="Images/gameover.png" width="40%" height="40%" /><br />
+				</div>
+			</div>
+			<div id="lifeModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<img src="Images/heart.png" /><br />
+					<p id="lifeModal__content"></p>
+				</div>
+			</div>
+
+			<img src="Images/heart.png" id="life2" class="life" />
+			<img src="Images/heart.png" id="life1" class="life" />
+			<img src="Images/heart.png" id="life3" class="life" />
+
+			<div id="clock">
+				<div id="seconds">15</div>
+			</div>
+
+			<div id="cat"><img src="Images/cat.png" alt="cat" /></div>
+			<div id="mouse"><img src="Images/mouse.png" alt="mouse" /></div>
+		</div>
+
+		<script type="text/javascript" src="JS/catch.js"></script>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Shamin Memary| shamin.v@gmail.com" />
+		<meta name="description" content="Free Games" />
+		<title>Guess the Number!</title>
+		<link rel="icon" type="icon" href="Images/game.ico" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+			integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="CSS/style.css" />
+		<link rel="stylesheet" href="CSS/guess.css" />
+	</head>
+	<body class="text-white">
+		<nav class="navbar navbar-expand-sm bg-light navbar-dark">
+			<!-- Brand/logo -->
+			<a class="navbar-brand" href="#">
+				<img src="Images/guess.png" alt="logo" style="width: 40px" />
+			</a>
+
+			<!-- Links -->
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<button
+						class="btn btn-light btn-lg"
+						onclick="location.href = 'index.html';"
+					>
+						Home
+					</button>
+				</li>
+				<li class="nav-item">
+					<button class="btn btn-light btn-lg mx-2 again">Again!</button>
+				</li>
+			</ul>
+		</nav>
+		<div id="gradient"></div>
+		<header class="container-fluid mt-5 text-center">
+			<h1 class="text-center">Guess My Number!</h1>
+			<p class="h4 mb-5 pb-5 pt-2">(Between 1 and 50)</p>
+
+			<div class="bg-light text-dark number">?</div>
+		</header>
+		<main class="container-fluid mt-5">
+			<div class="row">
+				<section class="col-sm-12 col-md-6 p-4 text-center">
+					<input
+						type="number"
+						class="d-block mx-auto mt-5 text-white text-center guess"
+						max="50"
+					/>
+					<button class="btn btn-light btn-lg mt-5 mx-auto check">
+						Check!
+					</button>
+				</section>
+				<section class="col-sm-12 col-md-6 p-4">
+					<h4 class="m-5 message">Start guessing...</h4>
+					<h5 class="label-score my-4">
+						💯 Score: <span class="score">50</span>
+					</h5>
+					<h5 class="label-highscore my-4 py-3">
+						🥇 Highscore: <span class="highscore">0</span>
+					</h5>
+				</section>
+			</div>
+		</main>
+
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+			integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="JS/guess.js"></script>
+	</body>
+</html>
